@@ -11,4 +11,18 @@
   max-width: 1200px;
 }
 
+.carousel-cell p {
+  font-size: 1.5em;
+  color: #5be04c;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  margin: 10px;
+  display: inline-block;
+  border-radius: 25%;
+}
+
+.flickity-page-dots {
+  display: none;
+}
+
 /*# sourceMappingURL=style.css.map */
