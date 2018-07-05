@@ -1,22 +1,21 @@
 "use strict";
 
-
-var flkty = new Flickity( '.main-carousel', {
+var flkty = new Flickity(".main-carousel", {
   // options
-  cellAlign: 'left',
+  cellAlign: "left",
   contain: true,
-  hash: true,
- });
-
-var progressBar = document.querySelector('.progress-bar')
-
-flkty.on( 'scroll', function( progress ) {
-  progress = Math.max( 0, Math.min( 1, progress ) );
-  progressBar.style.width = progress * 100 + '%';
+  hash: true
 });
 
-var buttonReset = document.querySelector('.buttonreset');
+var progressBar = document.querySelector(".progress-bar");
 
-buttonReset.addEventListener( 'click', function( event ) {
-   flkty.select( 0 );
+flkty.on("scroll", function(progress) {
+  progress = Math.max(0, Math.min(1, progress));
+  progressBar.style.width = progress * 100 + "%";
+});
+
+var buttonReset = document.querySelector(".buttonreset");
+
+buttonReset.addEventListener("click", function(event) {
+  flkty.select(0);
 });
